@@ -13,7 +13,7 @@ from aiogram.fsm.storage.memory import MemoryStorage
 logging.basicConfig(level=logging.INFO)
 
 # Инициализация бота и диспетчера
-BOT_TOKEN = 8206796480:AAGlUC2iJtqQ_ijQMcoYfxFrMF51pgOfyk0  # Замените на свой токен
+BOT_TOKEN = "8206796480:AAGlUC2iJtqQ_ijQMcoYfxFrMF51pgOfyk0"  # Замените на свой токен
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher(storage=MemoryStorage())
 
@@ -120,8 +120,8 @@ async def start_with_deep_link(message: Message, state: FSMContext):
             await state.set_state(AnonymousMessageStates.waiting_for_message)
             
             await message.answer(
-                "✍️ Напиши свое анонимное сообщение или отправь фото (с подписью или без). "
-                "Оно будет отправлено получателю, но он не узнает, кто его отправил.\n\n"
+                "✍️ Напиши свой вопрос, который так интересует тебя."
+                "Он будет анонимно отправлен в канал Психологиня со Звездочкой*.\n\n"
                 "Для отмены отправь /cancel."
             )
         except ValueError:

@@ -13,7 +13,7 @@ from aiogram.fsm.storage.memory import MemoryStorage
 logging.basicConfig(level=logging.INFO)
 
 # Инициализация бота и диспетчера
-BOT_TOKEN = "YOUR_BOT_TOKEN"  # Замените на свой токен
+BOT_TOKEN = 8206796480:AAGlUC2iJtqQ_ijQMcoYfxFrMF51pgOfyk0  # Замените на свой токен
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher(storage=MemoryStorage())
 
